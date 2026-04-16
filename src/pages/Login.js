@@ -18,7 +18,7 @@ function Login() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://skill-exchange-production-c9dc.up.railway.app/api/auth/login",
         form
       );
 

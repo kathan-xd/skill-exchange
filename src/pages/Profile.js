@@ -19,7 +19,7 @@ function Profile() {
     try {
       setLoading(true);
 
-      await axios.put("http://localhost:5000/api/user/skills", {
+      await axios.put("https://skill-exchange-production-c9dc.up.railway.app/api/user/skills", {
         skillsOffered: offered.split(",").map(s => s.trim()),
         skillsWanted: wanted.split(",").map(s => s.trim()),
         userId: user.id

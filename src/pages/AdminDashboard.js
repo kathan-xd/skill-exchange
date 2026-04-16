@@ -29,7 +29,7 @@ function AdminDashboard() {
   // FETCH USERS
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/user/browse")
+      .get("https://skill-exchange-production-c9dc.up.railway.app/api/user/browse")
       .then((res) => setUsers(res.data))
       .catch(() => alert("Error fetching users"));
   }, []);

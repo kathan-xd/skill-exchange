@@ -10,7 +10,7 @@ function Browse() {
 
   const fetchUsers = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/user/browse");
+      const res = await axios.get("https://skill-exchange-production-c9dc.up.railway.app/api/user/browse");
       console.log(res.data); // 🔥 DEBUG
       setUsers(res.data);
     } catch (err) {
